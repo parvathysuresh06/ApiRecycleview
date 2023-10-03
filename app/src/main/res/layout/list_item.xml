@@ -1,26 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:layout_marginBottom="20dp"
+android:paddingBottom="10dp"
     android:layout_height="wrap_content">
-<TextView
-    android:id="@+id/title"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="30sp"
-    android:text="Title"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:text="Title"/>
 
 
-    <TextView
-        android:id="@+id/price"
-        android:text="3000 RS"
-        android:textSize="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <ImageView
-        android:id="@+id/image"
-        android:src="@drawable/ic_android_black_24dp"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/price"
+            android:text="3000 RS"
+            android:textSize="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/de"
+            android:text="3000 RS"
+            android:textSize="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/rating"
+            android:text="3000 RS"
+            android:textSize="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/image"
+            android:src="@drawable/ic_android_black_24dp"
+            android:layout_marginTop="30dp"
+
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="150dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buy"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Buy"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.appcompat.widget.LinearLayoutCompat>
